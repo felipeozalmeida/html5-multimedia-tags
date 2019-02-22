@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Multimedia</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#image">Image</a>
+                </li>
+                <li>
+                    <a href="#audio">Audio</a>
+                </li>
+                <li>
+                    <a href="#video">Video</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Multimedia examples</h1>
+            <p>Just some content to have fun with HTML5 multimedia tags.</p>
+            <h2 id="image">Image</h2>
+            <img
+                srcset="
+                    img/cherry-blossom-576w.jpg 576w,
+                    img/cherry-blossom-768w.jpg 768w,
+                    img/cherry-blossom-992w.jpg 992w,
+                    img/cherry-blossom-1200w.jpg 1200w"
+                sizes="
+                    (max-width: 576px) 100vw,
+                    (max-width: 768px) 100vw,
+                    (max-width: 992px) 100vw,
+                    1200px"
+                src="img/cherry-blossom-1200w.jpg"
+                alt="Image of a cherry blossom">
+            <p>Photo by 
+                <a
+                    href="https://unsplash.com/photos/Lm5rkxzgiFQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Banter Snaps</a>
+                on 
+                <a
+                    href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    target="_blank"
+                    rel="noopener noreferrer">Unsplash</a>
+            </p>
+            <h2 id="audio">Audio</h2>
+            <audio controls src="sound/Motherlode.mp3">
+                Your browser doesn't support the <code>audio</code> element.
+            </audio>
+            <p>Motherlode Kevin MacLeod (incompetech.com) Licensed under 
+                <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons: By Attribution 3.0 License</a>
+            </p>
+            <h2 id="video">Video</h2>
+            <video controls width="100%">
+                <source
+                    src="https://media.giphy.com/media/2iej0by4Uu4MbVSkZu/giphy.mp4"
+                    type="video/mp4">
+                Your browser doesn't support the <code>video</code> element.
+            </video>
+            <p>GIF by Frieze - via <a href="https://gph.is/g/aeYRG8a">GIPHY</a></p>
+        </article>
+    </main>
+    <footer>
+        <time datetime="22-02-2019">Felipe Almeida &copy; 2019</time>
+    </footer>
+</body>
+
+</html>
